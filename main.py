@@ -5,8 +5,6 @@ import argparse
 import os
 import time
 import googleapiclient.discovery
-
-import googleapiclient.discovery
 from six.moves import input
 
 
@@ -127,11 +125,6 @@ def hello_pubsub(event, context):
     """
     pubsub_message = base64.b64decode(event['data']).decode('utf-8')
     jsonmsg = json.loads(pubsub_message)
-    print(jsonmsg['project'])
-    print(jsonmsg['bucketTo'])
-    print(jsonmsg['bucketFrom'])
-    print(jsonmsg['zone'])
-    print(jsonmsg['instance_name'])
     print('Creating instance.')
     project=jsonmsg['project']
     bucketTo=jsonmsg['bucketTo']
