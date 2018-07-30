@@ -1,0 +1,29 @@
+Cloud Pub/Sub & Cloud Functions
+
+Use case: 
+Use Cloud Pub/Sub and Cloud Functions to create an instance, copy an object from one bucket to another bucket and after copying the object, delete the instance.
+
+Steps:
+Create a pub/sub topic.
+Create a cloud function.
+Send json as a pub/sub message which includes, instance name, machine-size, object-path.
+After json being sent to pub/sub, cloud function should get triggered.
+After cloud function being triggered, instance should get created with values passed in json message.
+Copy object from one bucket to another, after copying is done, instance should get deleted.
+
+Note:
+1. json can be like:
+{
+	instance_name : "xyz",
+  	instance_size :"n1-standard-1" ,
+	object_path : "gs://path/to/object"
+}
+
+2. Can use any environment i.e python or node
+
+
+Expected Outcomes :
+1. Understanding and implementation of cloud functions and cloud pub/sub.
+2. Instance creation and deletion with apis.
+3. Usage of startup scripts.
+4. Understanding of serverless architecture and its working.
