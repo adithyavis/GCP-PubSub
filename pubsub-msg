@@ -1,4 +1,4 @@
-
+#JSON input- message to be published
 {
 "project":"Replace with the project name pe-training",
 "bucketTo":" Replace with the link to bucket 2 gs://Adithya",
