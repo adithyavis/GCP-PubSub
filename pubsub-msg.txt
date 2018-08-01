@@ -1,1 +1,1 @@
-{"project":"Replace with the project name pe-training","bucketTo":" Replace with the link to bucket 2 gs://Adithya","bucketFrom":"Replace with the link to your file in bucket 1 gs://dharam-storage/IAM.dot","zone":"Replace with the Zone in which the instance is to be created","instance_name":"Replace with the Name of the instance to be created"}
+{"project":"pe-training","bucketTo":"gs://dharam1234","bucketFrom":"gs://dharam-storage/IAM.dot","zone":"us-central1-a","instance_name":"adithyainstance"}
