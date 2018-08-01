@@ -117,7 +117,7 @@ def main(project,bucketTo, bucketFrom, zone,instance_name):
     wait_for_operation(compute, project, zone, operation['name'])
     print('Instance Deleted')
 
-def hello_pubsub(event, context):
+def adithyafunction(event, context):
     """Triggered from a message on a Cloud Pub/Sub topic.
     Args:
          event (dict): Event payload.
